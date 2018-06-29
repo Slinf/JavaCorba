@@ -35,7 +35,7 @@ public class GestionCompte extends JFrame {
 
     private void build(){
         setTitle(toUTF8("Création d'un nouveau compte bancaire"));
-        setSize(400,400);
+        setSize(800,800);
         setLocationRelativeTo(null);
         setResizable(false);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

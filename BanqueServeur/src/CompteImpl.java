@@ -103,18 +103,22 @@ public class CompteImpl extends ComptePOA {
 
 	@Override
 	public String afficherBeneficiaire() {
+		System.out.println("Affichage beneficiaire");
 		String listString = "";
-
-		for (CompteImpl c : LstBenef)
-		{
-			listString += " Client :" + c.nomClient + " Numéro de compte:" + c.noCompte + "\t";
+		if(LstBenef.isEmpty()) {
+			listString="Aucun bénéficiare n'a été ajouté";
 		}
-
+		else {
+			for (CompteImpl c : LstBenef) {
+				listString += " Client :" + c.nomClient + " Numéro de compte:" + c.noCompte + "\t";
+			}
+		}
 		return listString;
 	}
 
 	@Override
 	public String afficherDebits() {
+		System.out.println("Affichage debits");
 		String listString = "";
 		for (Operation op : LstOperation)
 		{
@@ -126,6 +130,7 @@ public class CompteImpl extends ComptePOA {
 
 	@Override
 	public String afficherCredits() {
+		System.out.println("Affichage credits");
 		String listString = "";
 		for (Operation op : LstOperation)
 		{
@@ -138,6 +143,7 @@ public class CompteImpl extends ComptePOA {
 
 	@Override
 	public String afficherVirements() {
+		System.out.println("Affichage virements");
 		String listString = "";
 		for (Operation op : LstOperation)
 		{
@@ -149,6 +155,7 @@ public class CompteImpl extends ComptePOA {
 
 	@Override
 	public String afficherAjoutBeneficiaire() {
+		System.out.println("Ajout beneficiaire");
 		String listString = "";
 		for (Operation op : LstOperation)
 		{

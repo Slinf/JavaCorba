@@ -31,7 +31,7 @@ public class LastOperation extends JFrame {
 
     private void build(){
         setTitle(toUTF8("Dernière Opération"));
-        setSize(400,400);
+        setSize(800,800);
         setLocationRelativeTo(null);
         setResizable(false);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

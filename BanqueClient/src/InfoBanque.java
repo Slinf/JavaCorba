@@ -20,7 +20,13 @@ public class InfoBanque extends JFrame {
     public InfoBanque(){
         super();
         this.app = this;
+        getInfos();
         build();//On initialise notre fenêtre
+    }
+
+    private String getInfos() {
+        String infos = ClientBanque.monAgenceImpl.afficherInfoBanque();
+        return infos;
     }
 
     //Problème d'encodage compilation Hors IDE
@@ -33,7 +39,7 @@ public class InfoBanque extends JFrame {
 
     private void build(){
         setTitle(toUTF8("Information de la Banque"));
-        setSize(400,400);
+        setSize(800,800);
         setLocationRelativeTo(null);
         setResizable(false);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -45,18 +51,20 @@ public class InfoBanque extends JFrame {
         panelCreateAccount.setLayout(null);
         panelCreateAccount.setBackground(Color.white);
 
-        infos = new JLabel(toUTF8("test"));
-        infos.setBounds(180,200,400,40);
+        infos = new JLabel(toUTF8("Aucunes Informations disponibles"));
+        if (getInfos()!=null)
+            infos.setText(getInfos());
+        infos.setBounds(20,100,700,400);
 
         title = new JLabel(toUTF8("Informations de la Banque"));
         title.setFont(new Font("Serif", Font.PLAIN, 25));
         title.setBounds(20,10,400,40);
         btnContact = new JButton(toUTF8("Contacter votre conseiller"));
-        btnContact.setBounds(20,250,220,30);
+        btnContact.setBounds(20,600,220,30);
 
 
         btnBack = new JButton(toUTF8("< Retour"));
-        btnBack.setBounds(20,300,90,30);
+        btnBack.setBounds(20,650,90,30);
         btnBack.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

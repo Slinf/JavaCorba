@@ -102,9 +102,15 @@ public class AgenceImpl extends AgencePOA {
 	public String afficherInfoBanque() {
 
 		System.out.println("Info: Affichage des infos de la Banque");
-		String infos = "Banque Intergalactique - Numéro accessible dans tous l'univers";
+		StringBuilder infos = new StringBuilder(64);
+		infos.append("<html><h1>Banque Intergalactique - Accessible dans tous l'univers<h1> <br/><br/>").
+				append("<p>Fidèle à l?ambition de progrès social qui a présidé à la création de la première Caisse en 1818 sur la planète Terre, la Banque Intergalactique témoigne au quotidien de son engagement sur le terrain." +
+						"Le financement de nombreux projets d'intérêt général, sa politique de responsabilité sociale, sa lutte contre l?exclusion bancaire et financière, la Fondation de l'espoir" +
+						" pour la solidarité témoignent des valeurs qui font de la Banque Intergalactique une banque différente depuis 28890 ans. " +
+						"Enfin, sa politique de mécénat-sponsoring vient en appui des ambitions de développement et de renforcement de la marque.</p>").
+				append("</html>");
 
-		return infos;
+		return infos.toString();
 	}
 
 	@Override

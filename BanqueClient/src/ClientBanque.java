@@ -2,6 +2,7 @@
 import Banque.Agence;
 import Banque.AgenceHelper;
 import Banque.Compte;
+import Banque.CompteHelper;
 import org.omg.CORBA.ORB;
 import org.omg.CosNaming.NamingContextExt;
 import org.omg.CosNaming.NamingContextExtHelper;
@@ -11,6 +12,7 @@ import javax.swing.*;
 public class ClientBanque {
 
 	static Agence monAgenceImpl;
+	static Compte monCompteImpl;
 
 	public static void main(String args[]) {
 		try {
@@ -28,8 +30,16 @@ public class ClientBanque {
 			NamingContextExt ncRef = NamingContextExtHelper.narrow(objRef);
 
 			// demander la reference de l'objet au service de noms
-			String nom = "Agence";
-			monAgenceImpl = AgenceHelper.narrow(ncRef.resolve_str(nom));
+			String nomserviceAgence = "Agence";
+			monAgenceImpl = AgenceHelper.narrow(ncRef.resolve_str(nomserviceAgence));
+
+			ORB orb2 = ORB.init(args, null);
+			// obtenir une reference au service de nommage
+			org.omg.CORBA.Object objRef2 = orb2
+					.resolve_initial_references("NameService");
+			NamingContextExt ncCRef = NamingContextExtHelper.narrow(objRef2);
+			String nomserviceCompte = "Compte";
+			monCompteImpl = CompteHelper.narrow(ncCRef.resolve_str(nomserviceCompte));
 
 			//System.out.println(monAgenceImpl.afficherListeCompte());
 			//Compte a = monAgenceImpl.creerCompte("Jean",12,20000);

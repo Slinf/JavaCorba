@@ -1,5 +1,8 @@
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 
@@ -16,7 +19,6 @@ public class MainWindow extends JFrame{
     JLabel txt;
 
 
-
     public MainWindow(){
         super();
         build();//On initialise notre fenêtre
@@ -31,7 +33,7 @@ public class MainWindow extends JFrame{
 
     private void build(){
         setTitle(toUTF8("Application Gestion Bancaire"));
-        setSize(400,400);
+        setSize(700,512);
         setLocationRelativeTo(null);
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -45,25 +47,34 @@ public class MainWindow extends JFrame{
         panel.setBackground(Color.white);
 
         title = new JLabel(toUTF8("Bienvenue sur l'application de Gestion Bancaire EII"));
-        title.setBounds(10,10,400,40);
-        title.setFont(new Font("Serif", Font.PLAIN, 20));
+        title.setBounds(10,10,800,40);
+        title.setFont(new Font("Serif", Font.PLAIN, 25));
         btnLogin = new JButton(new Action(this, "Connexion"));
-        btnLogin.setBounds(90,250,220,30);
+        btnLogin.setBounds(400,250,220,60);
         logintextField = new JTextField(10);
-        logintextField.setBounds(90,80,220,20);
+        logintextField.setBounds(400,100,220,40);
         logintextField.setColumns(10);
         passtextField = new JPasswordField(10);
-        passtextField.setBounds(90,110,220,20);
+        passtextField.setBounds(400,170,220,40);
         passtextField.setColumns(10);
         txt = new JLabel("");
-        txt.setBounds(90,140,220,20);
+        txt.setBounds(400,140,220,20);
 
+        BufferedImage wPic = null;
+        try {
+            wPic = ImageIO.read(this.getClass().getResource("login.png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        JLabel wIcon = new JLabel(new ImageIcon(wPic));
+        wIcon.setBounds(10,10,512,512);;
 
         panel.add(passtextField);
         panel.add(logintextField);
         panel.add(btnLogin);
         panel.add(title);
         panel.add(txt);
+        panel.add(wIcon);
 
         return panel;
     }

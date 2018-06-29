@@ -20,12 +20,16 @@ public class ServeurBanque {
 			rootpoa.the_POAManager().activate();
 			
 			// creer le servant
-			AgenceImpl AgenceRef = new AgenceImpl("BNP");
+			AgenceImpl AgenceRef = new AgenceImpl("Banque Intergalactique");
+			CompteImpl CompteRef = new CompteImpl("admin",0,0);
+
 			
 			// obtenir la reference CORBA du servant
 			org.omg.CORBA.Object ref = rootpoa.servant_to_reference(AgenceRef);
+			org.omg.CORBA.Object refcompte = rootpoa.servant_to_reference(CompteRef);
 			
 			Agence href = AgenceHelper.narrow(ref);
+			Compte hrefcompte = CompteHelper.narrow(refcompte);
 			
 			// obtenir la reference du contexte de nommage
 			org.omg.CORBA.Object objRef = orb
@@ -33,11 +37,17 @@ public class ServeurBanque {
 			
 			// Utiliser NamingContextExt qui est Interoperable
 			NamingContextExt ncRef = NamingContextExtHelper.narrow(objRef);
-			
+
 			// enregistrer le servant dans le service de nommage
 			String name = "Agence";
 			NameComponent path[] = ncRef.to_name(name);
 			ncRef.rebind(path, href);
+
+			// enregistrer le servant dans le service de nommage
+			String nameCompte = "Compte";
+			NameComponent pathcompte[] = ncRef.to_name(nameCompte);
+			ncRef.rebind(pathcompte, hrefcompte);
+
 			
 			System.out.println("Banque est prête et est en attente.");
 			// attendre les invocations des clients

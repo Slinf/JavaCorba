@@ -37,7 +37,7 @@ public class Menu extends JFrame {
 
     private void build(){
         setTitle(toUTF8("Application Gestion Bancaire"));
-        setSize(400,400);
+        setSize(800,800);
         setLocationRelativeTo(null);
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
