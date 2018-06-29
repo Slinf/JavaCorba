@@ -1,7 +1,10 @@
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
 import java.nio.charset.Charset;
 
 public class Menu extends JFrame {
@@ -50,8 +53,11 @@ public class Menu extends JFrame {
         panelCreateAccount.setBackground(Color.white);
 
         title = new JLabel(toUTF8("Menu gestion bancaire"));;
-        title.setFont(new Font("Serif", Font.PLAIN, 25));
-        title.setBounds(60,20,400,40);
+        title.setFont(new Font("Serif", Font.ITALIC, 30));
+        title.setBounds(50,20,300,50);
+        title.setBackground(Color.white);
+        title.setOpaque(true);
+
         btnLastOpe = new JButton(toUTF8("Dernières opérations"));
         btnLastOpe.addActionListener(new ActionListener() {
             @Override
@@ -113,21 +119,30 @@ public class Menu extends JFrame {
             }
         });
 
+        BufferedImage wPic = null;
+        try {
+            wPic = ImageIO.read(this.getClass().getResource("background.jpg"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        JLabel wIcon = new JLabel(new ImageIcon(wPic));
+        wIcon.setBounds(0,0,800,800);;
 
-        btnCreate.setBounds(90,240,220,30);
-        btnLastOpe.setBounds(90,190,220,30);
-        btnBeneficiaire.setBounds(90,140,220,30);
-        btnInfoBanque.setBounds(90,90,220,30);
-        btnDisconnect.setBounds(90,320,220,30);
 
+        btnCreate.setBounds(250,500,300,50);
+        btnLastOpe.setBounds(250,400,300,50);
+        btnBeneficiaire.setBounds(250,300,300,50);
+        btnInfoBanque.setBounds(250,200,300,50);
+        btnDisconnect.setBounds(250,700,300,50);
 
+        panelCreateAccount.add(title);
         panelCreateAccount.add(btnCreate);
         panelCreateAccount.add(btnLastOpe);
         panelCreateAccount.add(btnBeneficiaire);
         panelCreateAccount.add(btnInfoBanque);
         panelCreateAccount.add(btnDisconnect);
+        panelCreateAccount.add(wIcon);
 
-        panelCreateAccount.add(title);
 
         return panelCreateAccount;
     }

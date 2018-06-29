@@ -5,50 +5,57 @@ import java.util.List;
 
 public class CompteImpl extends ComptePOA {
 	//Attributs
-	private String nomClient;
-	private float solde;
-	private int noCompte;
+	private String _nomClient;
+	private String _login;
+	private String _pass;
+	private String _prenom;
+	private float _solde;
+	private int _noCompte;
 	private static List<CompteImpl> LstBenef;
 	private static  List<Operation> LstOperation;
 
 
 	//Constructeur
-	public CompteImpl(String nom, int noComptebase,float soldeInitial){
-		nomClient = nom;
-		noCompte = noComptebase;
-		solde = soldeInitial;
+	public CompteImpl(String login,String nom,String prenom,String pass, float soldeInitial,int noComptebase){
+		_login=login;
+		_pass =pass;
+		_prenom=prenom;
+		_nomClient = nom;
+		_noCompte = noComptebase;
+		_solde = soldeInitial;
 		LstBenef = new ArrayList<CompteImpl>();
 		LstOperation = new ArrayList<Operation>();
 	}
 
-	//Pour Beneficiaire
-	public CompteImpl(String nom, int noComptebase){
-		nomClient = nom;
-		noCompte = noComptebase;
+	//Constructeur
+	public CompteImpl(String nom,String prenom,int noComptebase){
+		_prenom=prenom;
+		_nomClient = nom;
+		_noCompte = noComptebase;
 		LstBenef = new ArrayList<CompteImpl>();
 		LstOperation = new ArrayList<Operation>();
 	}
 
 	@Override
 	public String nomClient() {
-		return nomClient;
+		return _nomClient;
 	}
 
 	@Override
 	public void nomClient(String newNomClient) {
-		nomClient = newNomClient;
+		_nomClient = newNomClient;
 	}
 
 	@Override
 	public float solde() {
-		return solde;
+		return _solde;
 	}
 
 	@Override
 	public boolean debiter(float somme, int nocompte) {
 		System.out.println("Appel de debiter");
-		if (somme > 0 && solde > somme) {
-			solde = solde - somme;
+		if (somme > 0 && _solde > somme) {
+			_solde = _solde - somme;
 			Operation op = new Operation(0,nocompte,somme,"opération débit réussi");
 			return true;
 		}
@@ -61,7 +68,7 @@ public class CompteImpl extends ComptePOA {
 	public boolean crediter(float somme,int nocompte) {
 		System.out.println("Appel de crediter");
 		if (somme > 0) {
-			solde = solde + somme;
+			_solde = _solde + somme;
 			Operation op = new Operation(1,nocompte,somme,"opération crédit réussi");
 			return true;
 		}
@@ -74,8 +81,8 @@ public class CompteImpl extends ComptePOA {
 	@Override
 	public boolean virement(float somme, int nocompte) {
 		System.out.println("Appel de virement");
-		if (somme > 0 && solde > somme) {
-			solde = solde - somme;
+		if (somme > 0 && _solde > somme) {
+			_solde = _solde - somme;
 			Operation op = new Operation(2,nocompte,somme,"opération virement réussi");
 			return true;
 		}
@@ -93,8 +100,8 @@ public class CompteImpl extends ComptePOA {
 	}
 
 	@Override
-	public void ajouterBenef(String nomBenef, int nocompte) {
-		CompteImpl newBenef = new CompteImpl(nomBenef,nocompte);
+	public void ajouterBenef(String nomBenef,String prenomBenef, int nocompte) {
+		CompteImpl newBenef = new CompteImpl(nomBenef,prenomBenef,nocompte);
 		Operation op = new Operation(3,nocompte,0,nomBenef);
 		LstOperation.add(op);
 		LstBenef.add(newBenef);
@@ -110,7 +117,7 @@ public class CompteImpl extends ComptePOA {
 		}
 		else {
 			for (CompteImpl c : LstBenef) {
-				listString += " Client :" + c.nomClient + " Numéro de compte:" + c.noCompte + "\t";
+				listString += " Client :" + c._nomClient + " Numéro de compte:" + c._noCompte + "\t";
 			}
 		}
 		return listString;

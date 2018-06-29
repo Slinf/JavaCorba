@@ -35,13 +35,12 @@ public class AgenceImpl extends AgencePOA {
 		this.nom = newNom;
 	}
 
-
 	@Override
-	public Compte creerCompte(String nom,int nocompte, float solde) {
-		System.out.println("Création d'un compte : " + nom + " Numéro compte :" + nocompte  + "(" + solde
+	public Compte creerCompte(String login, String nom, String prenom, String pass, float solde, int nocompte) {
+		System.out.println("Création d'un compte : " + nom + "" + prenom + " Numéro compte :" + nocompte  + "(" + solde
 				+ " €)");
 
-		CompteImpl cpt = new CompteImpl(nom,nocompte,solde);
+		CompteImpl cpt = new CompteImpl(login,nom,prenom,pass,solde,nocompte);
 		// Conversion de CompteImpl => Compte
 		Compte unCompte = null;
 
@@ -59,6 +58,7 @@ public class AgenceImpl extends AgencePOA {
 
 		return unCompte;
 	}
+
 
 	@Override
 	public boolean supprimerCompte(String nom) {

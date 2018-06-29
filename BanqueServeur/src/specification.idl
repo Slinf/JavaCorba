@@ -9,7 +9,7 @@ module Banque {
 			boolean crediter (in float somme, in long nocompte);
 			boolean virement (in float somme, in long nocompte);
 			string infosCompte();
-			void ajouterBenef (in string nomBenef,in long nocompte);
+			void ajouterBenef (in string nomBenef,in string prenomBenef, in long nocompte);
             string afficherBeneficiaire ();
             string afficherDebits ();
             string afficherCredits ();
@@ -20,7 +20,7 @@ module Banque {
 		interface Agence{
 			attribute string nom;
 			
-			Compte  creerCompte(in string nom, in long nocompte, in float solde);
+			Compte  creerCompte(in string login,in string nom,in string prenom,in string pass, in float solde,in long nocompte);
 			boolean supprimerCompte(in string nom);
 			Compte  rechercherCompte(in string nom);
 			string  afficherListeCompte();

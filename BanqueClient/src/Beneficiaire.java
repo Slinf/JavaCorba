@@ -77,15 +77,15 @@ public class Beneficiaire extends JFrame {
         zeros.add(new String("Benef 2"));
         zeros.add(new String("Benef 3"));
         lst = new JList(zeros);
-        lst.setBounds(20,150,220,600);
+        lst.setBounds(20,150,150,600);
 
         btnBack = new JButton(toUTF8("< Retour"));
-        btnBack.setBounds(20,650,90,30);
+        btnBack.setBounds(400,700,220,30);
         btnBack.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 app.setVisible(false);
-                System.out.println("Go back");
+                System.out.println("Go back from Benef");
                 Menu menupage = new Menu();
                 menupage.setVisible(true);//On la rend visible
             }
