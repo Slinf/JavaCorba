@@ -1,0 +1,34 @@
+module Banque { 
+		
+		interface Compte{
+			
+			attribute string nomClient;
+			readonly attribute float solde;
+			
+			boolean debiter (in float somme, in long nocompte);
+			boolean crediter (in float somme, in long nocompte);
+			boolean virement (in float somme, in long nocompte);
+			string infosCompte();
+			void ajouterBenef (in string nomBenef,in long nocompte);
+            string afficherBeneficiaire ();
+            string afficherDebits ();
+            string afficherCredits ();
+            string afficherAjoutBeneficiaire();
+            string afficherVirements();
+		};
+		
+		interface Agence{
+			attribute string nom;
+			
+			Compte  creerCompte(in string nom, in long nocompte, in float solde);
+			boolean supprimerCompte(in string nom);
+			Compte  rechercherCompte(in string nom);
+			string  afficherListeCompte();
+			string afficherInfoBanque ();
+            string ConnexionBanque();
+		};
+		
+		
+};
+			
+			
