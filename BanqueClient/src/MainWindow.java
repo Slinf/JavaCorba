@@ -49,7 +49,7 @@ public class MainWindow extends JFrame{
         panel.setLayout(null);
         panel.setBackground(Color.white);
 
-        title = new JLabel(toUTF8("Bienvenue sur l'application de Gestion Bancaire EII"));
+        title = new JLabel(toUTF8("Bienvenue sur l'application de Gestion Bancaire Intergalactique"));
         title.setBounds(40,10,800,40);
         title.setFont(new Font("Serif", Font.PLAIN, 25));
 

@@ -2,6 +2,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.nio.charset.Charset;
 
 public class InfoBanque extends JFrame {
@@ -61,6 +64,29 @@ public class InfoBanque extends JFrame {
         title.setBounds(20,10,400,40);
         btnContact = new JButton(toUTF8("Contacter votre conseiller"));
         btnContact.setBounds(20,600,220,30);
+        btnContact.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Desktop desktop;
+                if (Desktop.isDesktopSupported()
+                        && (desktop = Desktop.getDesktop()).isSupported(Desktop.Action.MAIL)) {
+                    URI mailto = null;
+                    try {
+                        mailto = new URI("mailto:banqueintergalactique@example.com?subject=Contact%20conseiller");
+                    } catch (URISyntaxException e1) {
+                        e1.printStackTrace();
+                    }
+                    try {
+                        desktop.mail(mailto);
+                    } catch (IOException e1) {
+                        e1.printStackTrace();
+                    }
+                } else {
+                    // TODO fallback to some Runtime.exec(..) voodoo?
+                    throw new RuntimeException("desktop doesn't support mailto; mail is dead anyway ;)");
+                }
+            }
+        });
 
 
         btnBack = new JButton(toUTF8("< Retour"));
@@ -69,7 +95,7 @@ public class InfoBanque extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 app.setVisible(false);
-                System.out.println("Go back");
+                System.out.println("Go back from InfoBank");
                 Menu menupage = new Menu();
                 menupage.setVisible(true);//On la rend visible
             }

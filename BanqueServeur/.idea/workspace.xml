@@ -1,52 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d67e39a6-3733-4459-8951-0c1b639c902d" name="Default" comment="">
+    <list default="true" id="d67e39a6-3733-4459-8951-0c1b639c902d" name="Default" comment="c">
+      <change afterPath="$PROJECT_DIR$/src/Beneficiaire.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BanqueClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Banque/Agence.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Banque/Agence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Banque/AgenceHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Banque/AgenceHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Banque/AgenceHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Banque/AgenceHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Banque/AgenceOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Banque/AgenceOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Banque/AgencePOA.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Banque/AgencePOA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Banque/Compte.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Banque/Compte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Banque/CompteHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Banque/CompteHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Banque/CompteHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Banque/CompteHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Banque/CompteOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Banque/CompteOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Banque/ComptePOA.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Banque/ComptePOA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Banque/_AgenceStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Banque/_AgenceStub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Banque/_CompteStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Banque/_CompteStub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Beneficiaire$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Beneficiaire$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Beneficiaire$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Beneficiaire$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Beneficiaire.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Beneficiaire.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Beneficiaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Beneficiaire.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BanqueClient/src/GestionCompte$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/GestionCompte$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/GestionCompte$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/GestionCompte$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BanqueClient/src/GestionCompte.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/GestionCompte.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BanqueClient/src/GestionCompte.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/GestionCompte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/InfoBanque$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/InfoBanque$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/InfoBanque.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/InfoBanque.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/InfoBanque.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/InfoBanque.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BanqueClient/src/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/MainWindow.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BanqueClient/src/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Menu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Menu$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Menu$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Menu$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Menu$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Menu$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Menu$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Menu$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Menu$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Menu$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BanqueClient/src/specification.idl" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueClient/src/specification.idl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AgenceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AgenceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Banque/Agence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banque/Agence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Banque/AgenceHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banque/AgenceHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Banque/AgenceHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banque/AgenceHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Banque/AgenceOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banque/AgenceOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Banque/AgencePOA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banque/AgencePOA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Banque/Compte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banque/Compte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Banque/CompteHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banque/CompteHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Banque/CompteHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banque/CompteHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Banque/CompteOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banque/CompteOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Banque/ComptePOA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banque/ComptePOA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Banque/_AgenceStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banque/_AgenceStub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Banque/_CompteStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banque/_CompteStub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CompteImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompteImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CompteImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompteImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServeurBanque.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServeurBanque.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ServeurBanque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServeurBanque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/specification.idl" beforeDir="false" afterPath="$PROJECT_DIR$/src/specification.idl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,31 +36,53 @@
       <file leaf-file-name="ServeurBanque.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ServeurBanque.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+            <state relative-caret-position="105">
+              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="specification.idl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/specification.idl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="39" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompteImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CompteImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CompteImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+            <state relative-caret-position="581">
+              <caret line="111" column="103" lean-forward="true" selection-start-line="111" selection-start-column="103" selection-end-line="111" selection-end-column="103" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#864#865#0" expanded="true" />
-                <element signature="e#895#896#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AgenceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AgenceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="95" column="35" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="35" />
+              <folding>
+                <element signature="e#717#718#0" expanded="true" />
+                <element signature="e#739#740#0" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
+                <element signature="e#809#810#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Agence.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Banque/Agence.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AgenceOperations.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Banque/AgenceOperations.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="28" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -93,7 +90,7 @@
       <file leaf-file-name="ComptePOA.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Banque/ComptePOA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
+            <state relative-caret-position="20">
               <caret line="126" selection-start-line="126" selection-end-line="126" />
             </state>
           </provider>
@@ -102,10 +99,29 @@
       <file leaf-file-name="ServeurBanque.class" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ServeurBanque.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
+            <state relative-caret-position="129">
               <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Operation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Operation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="35" column="5" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="35" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Beneficiaire.class" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Beneficiaire.class">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="cd" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cd">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -137,6 +153,7 @@
         <option value="$PROJECT_DIR$/src/Banque/ComptePOA.java" />
         <option value="$PROJECT_DIR$/src/specification.idl" />
         <option value="$PROJECT_DIR$/src/AgenceImpl.java" />
+        <option value="$PROJECT_DIR$/src/Beneficiaire.java" />
         <option value="$PROJECT_DIR$/src/ServeurBanque.java" />
         <option value="$PROJECT_DIR$/src/CompteImpl.java" />
       </list>
@@ -160,8 +177,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -184,13 +199,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BanqueClient" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -300,12 +317,14 @@
       <workItem from="1530131183759" duration="1692000" />
       <workItem from="1530256376891" duration="342000" />
       <workItem from="1530256743344" duration="12201000" />
-      <workItem from="1530302410664" duration="5993000" />
+      <workItem from="1530302410664" duration="6234000" />
+      <workItem from="1530369075890" duration="740000" />
+      <workItem from="1530375144905" duration="5648000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44161000" />
+    <option name="totallyTimeSpent" value="50790000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -318,6 +337,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49731544" weight="0.3267974" />
@@ -327,19 +347,19 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5033557" side_tool="true" weight="0.67236465" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4986577" weight="0.32897604" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32897604" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4986577" weight="0.32897604" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4966443" weight="0.6721133" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49837664" visible="true" weight="0.20042644" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837664" visible="true" weight="0.20469083" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" sideWeight="0.5016234" side_tool="true" weight="0.34381664" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="7" />
@@ -350,30 +370,30 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4986577" weight="0.3267974" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4986577" weight="0.32897604" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32897604" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837664" visible="true" weight="0.20042644" />
       <window_info id="Structure" order="1" sideWeight="0.5016234" side_tool="true" weight="0.34381664" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49731544" weight="0.3267974" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32897604" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4986577" weight="0.32897604" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4966443" weight="0.6721133" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5033557" side_tool="true" weight="0.67236465" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Capture Tool" order="5" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4986577" weight="0.3267974" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info id="Favorites" order="6" side_tool="true" />
@@ -391,20 +411,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ServeurBanque.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="47" column="46" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Banque/CompteOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AgenceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -424,8 +430,6 @@
           <caret line="108" column="41" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -464,8 +468,6 @@
           <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -653,31 +655,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Banque/Agence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Banque/AgenceOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Banque/AgencePOA.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="110" column="16" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Banque/Compte.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -707,21 +688,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CompteImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Operation.java">
+    <entry file="file://$PROJECT_DIR$/src/specification.idl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        <state relative-caret-position="204">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServeurBanque.class">
+    <entry file="file://$PROJECT_DIR$/src/Banque/Compte.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        <state relative-caret-position="170">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -732,48 +711,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beneficiaire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Banque/AgenceOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Banque/ComptePOA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
+        <state relative-caret-position="20">
           <caret line="126" selection-start-line="126" selection-end-line="126" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/specification.idl">
+    <entry file="file://$PROJECT_DIR$/src/Banque/Agence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="39" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AgenceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
-          <folding>
-            <element signature="e#717#718#0" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ServeurBanque.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+        <state relative-caret-position="105">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServeurBanque.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Operation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beneficiaire.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CompteImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+        <state relative-caret-position="581">
+          <caret line="111" column="103" lean-forward="true" selection-start-line="111" selection-start-column="103" selection-end-line="111" selection-end-column="103" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AgenceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="95" column="35" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="35" />
+          <folding>
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
           </folding>
         </state>
       </provider>

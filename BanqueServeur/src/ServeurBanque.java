@@ -21,7 +21,7 @@ public class ServeurBanque {
 			
 			// creer le servant
 			AgenceImpl AgenceRef = new AgenceImpl("Banque Intergalactique");
-			CompteImpl CompteRef = new CompteImpl("admin","admin",0);
+			CompteImpl CompteRef = new CompteImpl("admin","admin","admin","admin",0,0);
 			
 			// obtenir la reference CORBA du servant
 			org.omg.CORBA.Object ref = rootpoa.servant_to_reference(AgenceRef);

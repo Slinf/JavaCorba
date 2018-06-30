@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CompteImpl extends ComptePOA {
+
 	//Attributs
 	private String _nomClient;
 	private String _login;
@@ -11,7 +12,7 @@ public class CompteImpl extends ComptePOA {
 	private String _prenom;
 	private float _solde;
 	private int _noCompte;
-	private static List<CompteImpl> LstBenef;
+	private static List<Beneficiaire> LstBenef;
 	private static  List<Operation> LstOperation;
 
 
@@ -23,16 +24,7 @@ public class CompteImpl extends ComptePOA {
 		_nomClient = nom;
 		_noCompte = noComptebase;
 		_solde = soldeInitial;
-		LstBenef = new ArrayList<CompteImpl>();
-		LstOperation = new ArrayList<Operation>();
-	}
-
-	//Constructeur
-	public CompteImpl(String nom,String prenom,int noComptebase){
-		_prenom=prenom;
-		_nomClient = nom;
-		_noCompte = noComptebase;
-		LstBenef = new ArrayList<CompteImpl>();
+		LstBenef = new ArrayList<Beneficiaire>();
 		LstOperation = new ArrayList<Operation>();
 	}
 
@@ -101,7 +93,7 @@ public class CompteImpl extends ComptePOA {
 
 	@Override
 	public void ajouterBenef(String nomBenef,String prenomBenef, int nocompte) {
-		CompteImpl newBenef = new CompteImpl(nomBenef,prenomBenef,nocompte);
+		Beneficiaire newBenef = new Beneficiaire(nomBenef,prenomBenef,nocompte);
 		Operation op = new Operation(3,nocompte,0,nomBenef);
 		LstOperation.add(op);
 		LstBenef.add(newBenef);
@@ -116,10 +108,11 @@ public class CompteImpl extends ComptePOA {
 			listString="Aucun bénéficiare n'a été ajouté";
 		}
 		else {
-			for (CompteImpl c : LstBenef) {
-				listString += " Client :" + c._nomClient + " Numéro de compte:" + c._noCompte + "\t";
+			for (Beneficiaire b : LstBenef) {
+				listString += b.getNom() + " " +  b.getPrenom() + " N°Compte:" + b.getNocompte() + "_";
 			}
 		}
+		System.out.println(listString);
 		return listString;
 	}
 

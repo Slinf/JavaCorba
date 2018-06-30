@@ -9,6 +9,7 @@ public class GestionCompte extends JFrame {
     public static final Charset ISO_8859_1 = Charset.forName("ISO-8859-1");
     public static final Charset UTF_8 = Charset.forName("UTF-8");
 
+    JLabel error;
     JLabel title;
     JButton btnValid;
     JButton btnBack;
@@ -70,10 +71,23 @@ public class GestionCompte extends JFrame {
                 String nom = NomtextField.getText();
                 String prenom= PrenontextField.getText();
                 String pass = passtextField.getText();
-                Float solde = Float.parseFloat(SoldetextField.getText());
-                int noCompte = Integer.valueOf(NoComptetextField.getText());
+                String soldestr = SoldetextField.getText();
+                String noComptestr = NoComptetextField.getText();
+                Float solde = null;
+                int noCompte=0;
 
-                ClientBanque.monAgenceImpl.creerCompte(login,nom,prenom,pass,solde,noCompte);
+                if(login.isEmpty() || nom.isEmpty() || prenom.isEmpty() || pass.isEmpty() || soldestr.isEmpty() || noComptestr.isEmpty())
+                {
+                    error.setVisible(true);
+                }
+                else if(Integer.valueOf(noComptestr) == 0 || Float.parseFloat(soldestr)== 0){
+                    error.setVisible(true);
+                }
+                else {
+                    solde = Float.parseFloat(soldestr);
+                    noCompte = Integer.valueOf(noComptestr);
+                    ClientBanque.monAgenceImpl.creerCompte(login, nom, prenom, pass, solde, noCompte);
+                }
             }
         });
 
@@ -123,8 +137,12 @@ public class GestionCompte extends JFrame {
         NoComptetextField= new JTextField();
         NoComptetextField.setBounds(250,590,300,50);
 
+        error= new JLabel("Veuillez renseigner tous les champs");
+        error.setForeground(Color.red);
+        error.setBounds(250,420,300,50);
+        error.setVisible(false);
 
-
+        panelCreateAccount.add(error);
         panelCreateAccount.add(Nomlbl);
         panelCreateAccount.add(Prenonlbl);
         panelCreateAccount.add(passlbl);
