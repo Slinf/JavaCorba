@@ -19,6 +19,9 @@ public class GestionCompte extends JFrame {
     JTextField passtextField;
     JTextField SoldetextField;
     JTextField NoComptetextField;
+    JLabel LstComptelbl;
+
+
 
     JLabel Soldelbl;
     JLabel NoComptelbl;
@@ -26,8 +29,14 @@ public class GestionCompte extends JFrame {
     JLabel Nomlbl;
     JLabel Prenonlbl;
     JLabel passlbl;
-
+    JList lst;
+    DefaultListModel  model=new DefaultListModel ();
     private GestionCompte app;
+
+    private String getListCompte (){
+        return ClientBanque.monAgenceImpl.afficherListeCompte();
+    }
+
 
     public GestionCompte(){
         super();
@@ -58,41 +67,82 @@ public class GestionCompte extends JFrame {
         panelCreateAccount.setBackground(Color.white);
 
         title = new JLabel(toUTF8("Création d'un compte bancaire"));
-        Font myFont = new Font("Serif", Font.BOLD, 25);
+        Font myFont = new Font("Serif", Font.BOLD, 20);
         title.setFont(myFont);
-        title.setBounds(40,10,400,40);
+        title.setBounds(20,10,400,40);
+
+        LstComptelbl = new JLabel(toUTF8("Liste des Comptes :"));
+        LstComptelbl.setFont(new Font("Serif", Font.ITALIC, 25));
+        LstComptelbl.setBounds(60,150,250,40);
 
         btnValid = new JButton(toUTF8("Valider Informations"));
-        btnValid.setBounds(250,600,300,50);
+        btnValid.setBounds(400,620,300,50);
         btnValid.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String login = logintextField.getText();
-                String nom = NomtextField.getText();
-                String prenom= PrenontextField.getText();
-                String pass = passtextField.getText();
-                String soldestr = SoldetextField.getText();
-                String noComptestr = NoComptetextField.getText();
-                Float solde = null;
-                int noCompte=0;
+                try{
+                    String login = logintextField.getText();
+                    String nom = NomtextField.getText();
+                    String prenom= PrenontextField.getText();
+                    String pass = passtextField.getText();
+                    String soldestr = SoldetextField.getText();
+                    String noComptestr = NoComptetextField.getText();
+                    Float solde = null;
+                    int noCompte=0;
 
-                if(login.isEmpty() || nom.isEmpty() || prenom.isEmpty() || pass.isEmpty() || soldestr.isEmpty() || noComptestr.isEmpty())
-                {
+                    if(login.isEmpty() || nom.isEmpty() || prenom.isEmpty() || pass.isEmpty() || soldestr.isEmpty() || noComptestr.isEmpty())
+                    {
+                        error.setVisible(true);
+                    }
+                    else if(Integer.valueOf(noComptestr) == 0 || Float.parseFloat(soldestr)== 0){
+                        error.setVisible(true);
+                    }
+                    else {
+                        solde = Float.parseFloat(soldestr);
+                        noCompte = Integer.valueOf(noComptestr);
+                        ClientBanque.monAgenceImpl.creerCompte(login, nom, prenom, pass, solde, noCompte);
+
+                        if (getListCompte() != null)
+                        {
+                            model.clear();
+                            String str = toUTF8(getListCompte());
+                            String[] parts = str.split("_");
+                            for (String benef : parts)
+                            {
+                                model.addElement(benef);
+                            }
+
+                            lst.setModel(model);
+                        }
+
+                    }
+
+                }
+                catch (Exception ex){
+                    error.setText("Erreur, info : " + ex.getMessage());
                     error.setVisible(true);
                 }
-                else if(Integer.valueOf(noComptestr) == 0 || Float.parseFloat(soldestr)== 0){
-                    error.setVisible(true);
-                }
-                else {
-                    solde = Float.parseFloat(soldestr);
-                    noCompte = Integer.valueOf(noComptestr);
-                    ClientBanque.monAgenceImpl.creerCompte(login, nom, prenom, pass, solde, noCompte);
-                }
+
+
             }
         });
 
+
+        if(getListCompte()!=null)
+        {
+            String str = toUTF8(getListCompte());
+            String [] parts = str.split("_");
+            for (String compte:parts) {
+                System.out.println(compte);
+                model.addElement(compte);
+            }
+        }
+        lst = new JList(model);
+        lst.setBounds(60,200,220,800);
+
+
         btnBack = new JButton(toUTF8("< Retour"));
-        btnBack.setBounds(20,700,90,30);
+        btnBack.setBounds(400,700,220,30);
         btnBack.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -105,48 +155,53 @@ public class GestionCompte extends JFrame {
 
         PrenontextField = new JTextField();
         Prenonlbl= new JLabel(toUTF8("Prénom"));
-        Prenonlbl.setBounds(250,100,300,50);
-        PrenontextField.setBounds(250,150,300,50);
+        Prenonlbl.setBounds(400,50,300,50);
+        PrenontextField.setBounds(400,100,300,50);
         PrenontextField.setColumns(10);
 
         Nomlbl= new JLabel("Nom :");
-        Nomlbl.setBounds(250,190,300,50);
+        Nomlbl.setBounds(400,140,300,50);
         NomtextField = new JTextField();
-        NomtextField.setBounds(250,230,300,50);
+        NomtextField.setBounds(400,180,300,50);
         NomtextField.setColumns(10);
 
         passtextField = new JTextField();
         passlbl= new JLabel("Mot de passe : ");
-        passlbl.setBounds(250,280,320,50);
-        passtextField.setBounds(250,320,300,50);
+        passlbl.setBounds(400,230,320,50);
+        passtextField.setBounds(400,280,300,50);
         passtextField.setColumns(10);
 
         loginlbl = new JLabel("Identifiant :");
-        loginlbl.setBounds(250,370,300,50);
+        loginlbl.setBounds(400,320,300,50);
         logintextField = new JTextField();
-        logintextField.setBounds(250,410,300,50);
+        logintextField.setBounds(400,370,300,50);
         logintextField.setColumns(10);
 
         Soldelbl = new JLabel("Solde :");
-        Soldelbl.setBounds(250,460,300,50);
+        Soldelbl.setBounds(400,410,300,50);
         SoldetextField= new JTextField();
-        SoldetextField.setBounds(250,500,300,50);
+        SoldetextField.setBounds(400,450,300,50);
 
-        NoComptelbl= new JLabel("N° compte :");
-        NoComptelbl.setBounds(250,550,300,50);
+        NoComptelbl= new JLabel(toUTF8("N° compte :"));
+        NoComptelbl.setBounds(400,500,300,50);
         NoComptetextField= new JTextField();
-        NoComptetextField.setBounds(250,590,300,50);
+        NoComptetextField.setBounds(400,540,300,50);
 
         error= new JLabel("Veuillez renseigner tous les champs");
         error.setForeground(Color.red);
-        error.setBounds(250,420,300,50);
+        error.setBounds(400,590,300,50);
         error.setVisible(false);
 
+        panelCreateAccount.add(lst);
         panelCreateAccount.add(error);
         panelCreateAccount.add(Nomlbl);
         panelCreateAccount.add(Prenonlbl);
         panelCreateAccount.add(passlbl);
         panelCreateAccount.add(loginlbl);
+        panelCreateAccount.add(Soldelbl);
+        panelCreateAccount.add(NoComptelbl);
+        panelCreateAccount.add(LstComptelbl);
+
 
         panelCreateAccount.add(btnBack);
         panelCreateAccount.add(btnValid);
@@ -155,6 +210,8 @@ public class GestionCompte extends JFrame {
         panelCreateAccount.add(NomtextField);
         panelCreateAccount.add(passtextField);
         panelCreateAccount.add(logintextField);
+        panelCreateAccount.add(SoldetextField);
+        panelCreateAccount.add(NoComptetextField);
         panelCreateAccount.add(title);
 
         return panelCreateAccount;

@@ -88,12 +88,11 @@ public class AgenceImpl extends AgencePOA {
 
 	@Override
 	public String afficherListeCompte() {
-		System.out.println("Info: Affichage liste comptes de l'agence : "
-				+ this.nom);
-		String desc = "Nom Agence : " + this.nom + "\n";
+		System.out.println("Info: Affichage liste comptes de l'agence : " + this.nom);
+		String desc = "";
 
 		for (Compte cpt : this.listeComptes) {
-			desc += cpt.infosCompte() + "\n";
+			desc += cpt.infosCompte() + "_";
 		}
 		return desc;
 	}

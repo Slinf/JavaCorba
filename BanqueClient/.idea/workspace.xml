@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7257b0b1-565c-4e66-ba79-3ad24974693d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../BanqueServeur/src/Beneficiaire.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Beneficiaire$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Beneficiaire$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Beneficiaire$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Beneficiaire$2.class" afterDir="false" />
@@ -12,16 +11,12 @@
       <change beforePath="$PROJECT_DIR$/src/GestionCompte$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/GestionCompte$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GestionCompte.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/GestionCompte.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GestionCompte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GestionCompte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InfoBanque$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/InfoBanque$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InfoBanque.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/InfoBanque.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InfoBanque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InfoBanque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BanqueServeur/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueServeur/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BanqueServeur/src/AgenceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueServeur/src/AgenceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BanqueServeur/src/AgenceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueServeur/src/AgenceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BanqueServeur/src/CompteImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueServeur/src/CompteImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BanqueServeur/src/CompteImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueServeur/src/CompteImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BanqueServeur/src/ServeurBanque.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueServeur/src/ServeurBanque.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BanqueServeur/src/ServeurBanque.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BanqueServeur/src/ServeurBanque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BanqueServeur/src/cd" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,8 +45,12 @@
       <file leaf-file-name="GestionCompte.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GestionCompte.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="88" column="58" selection-start-line="88" selection-start-column="47" selection-end-line="88" selection-end-column="58" />
+            <state relative-caret-position="32">
+              <caret line="202" column="45" selection-start-line="202" selection-start-column="45" selection-end-line="202" selection-end-column="45" />
+              <folding>
+                <element signature="e#839#840#0" expanded="true" />
+                <element signature="e#907#908#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,8 +58,8 @@
       <file leaf-file-name="Beneficiaire.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Beneficiaire.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="108" column="20" lean-forward="true" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="20" />
+            <state relative-caret-position="323">
+              <caret line="71" column="45" lean-forward="true" selection-start-line="69" selection-start-column="7" selection-end-line="71" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -99,8 +98,8 @@
         <option value="$PROJECT_DIR$/src/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/InfoBanque.java" />
         <option value="$PROJECT_DIR$/src/specification.idl" />
-        <option value="$PROJECT_DIR$/src/GestionCompte.java" />
         <option value="$PROJECT_DIR$/src/Beneficiaire.java" />
+        <option value="$PROJECT_DIR$/src/GestionCompte.java" />
       </list>
     </option>
   </component>
@@ -268,12 +267,12 @@
       <workItem from="1530302630466" duration="11465000" />
       <workItem from="1530369037357" duration="635000" />
       <workItem from="1530374965574" duration="135000" />
-      <workItem from="1530375130733" duration="9995000" />
+      <workItem from="1530375130733" duration="12614000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68414000" />
+    <option name="totallyTimeSpent" value="71033000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -286,7 +285,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="1073" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.49932885" weight="0.32621083" />
@@ -298,10 +296,10 @@
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.4989339" weight="0.32763532" />
       <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49626866" weight="0.38235295" />
-      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.83848614" visible="true" weight="0.3091168" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="4" sideWeight="0.83848614" visible="true" weight="0.3091168" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28255033" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28255033" />
       <window_info anchor="right" id="Database" order="6" weight="0.32995737" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32763532" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -321,31 +319,31 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49626866" weight="0.38235295" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21268657" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.4989339" weight="0.32763532" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.49932885" weight="0.3267974" />
-      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28255033" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.49932885" weight="0.32621083" />
+      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49626866" weight="0.38235295" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32897604" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32763532" />
       <window_info anchor="right" id="Database" order="6" weight="0.32995737" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="4" sideWeight="0.8395522" visible="true" weight="0.456427" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50373137" side_tool="true" weight="0.38235295" />
-      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="4" sideWeight="0.83848614" visible="true" weight="0.3091168" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.16151386" side_tool="true" weight="0.456427" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.39978212" />
       <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32897604" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49946696" weight="0.32897604" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.3295302" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -719,15 +717,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Beneficiaire.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="108" column="20" lean-forward="true" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="20" />
+        <state relative-caret-position="323">
+          <caret line="71" column="45" lean-forward="true" selection-start-line="69" selection-start-column="7" selection-end-line="71" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GestionCompte.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="88" column="58" selection-start-line="88" selection-start-column="47" selection-end-line="88" selection-end-column="58" />
+        <state relative-caret-position="32">
+          <caret line="202" column="45" selection-start-line="202" selection-start-column="45" selection-end-line="202" selection-end-column="45" />
+          <folding>
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -92,38 +92,43 @@ public class Beneficiaire extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                try{
+                    String nom = NomtextField.getText();
+                    String prenom= PrenontextField.getText();
+                    String noCompte = NoComptetextField.getText();
+                    int noCompteInt = 0;
 
-                String nom = NomtextField.getText();
-                String prenom= PrenontextField.getText();
-                String noCompte = NoComptetextField.getText();
-                int noCompteInt = 0;
-
-                if(nom.isEmpty() || prenom.isEmpty() || ((String) noCompte).isEmpty())
-                {
-                    error.setVisible(true);
-                }
-                else if(Integer.valueOf(noCompte) == 0)
-                {
-                    error.setVisible(true);
-                }
-                else {
-                    noCompteInt = Integer.parseInt(noCompte);
-                    ClientBanque.monCompteImpl.ajouterBenef(nom, prenom, noCompteInt);
-
-                    if (getListBenef() != null)
+                    if(nom.isEmpty() || prenom.isEmpty() || ((String) noCompte).isEmpty())
                     {
-                        model.clear();
-                        String str = toUTF8(getListBenef());
-                        String[] parts = str.split("_");
-                        for (String benef : parts)
-                        {
-                            model.addElement(benef);
-                        }
+                        error.setVisible(true);
+                    }
+                    else if(Integer.valueOf(noCompte) == 0)
+                    {
+                        error.setVisible(true);
+                    }
+                    else {
+                        noCompteInt = Integer.parseInt(noCompte);
+                        ClientBanque.monCompteImpl.ajouterBenef(nom, prenom, noCompteInt);
 
-                        lst.setModel(model);
+                        if (getListBenef() != null)
+                        {
+                            model.clear();
+                            String str = toUTF8(getListBenef());
+                            String[] parts = str.split("_");
+                            for (String benef : parts)
+                            {
+                                model.addElement(benef);
+                            }
+
+                            lst.setModel(model);
+                        }
                     }
                 }
-
+                catch (Exception ex)
+                {
+                    error.setText("Erreur, info : " + ex.getMessage());
+                    error.setVisible(true);
+                }
             }
         });
 
@@ -142,7 +147,7 @@ public class Beneficiaire extends JFrame {
 
         error= new JLabel("Veuillez renseigner tous les champs");
         error.setForeground(Color.red);
-        error.setBounds(400,360,300,50);
+        error.setBounds(400,350,300,50);
         error.setVisible(false);
 
         PrenontextField = new JTextField();

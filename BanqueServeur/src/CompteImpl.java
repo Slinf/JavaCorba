@@ -87,8 +87,7 @@ public class CompteImpl extends ComptePOA {
 	@Override
 	public String infosCompte() {
 		System.out.println("Demande infos compte!");
-		return "\tNom client : " + nomClient() 
-				+ "\n" + "\tSolde : " + solde() + "euros" ;
+		return "\tNom client : " + nomClient() + "\n" + "\tSolde : " + solde() + "euros" ;
 	}
 
 	@Override
