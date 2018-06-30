@@ -116,6 +116,17 @@ public class AgenceImpl extends AgencePOA {
 	public boolean ConnexionBanque(String login, String pass) {
 		System.out.println("Info: Tentative de connexion à la Banque");
 
+		for (Compte cpt : this.listeComptes) {
+			System.out.println(cpt.loginClient() + cpt.passClient());
+			if(login.equals(cpt.loginClient()) && pass.equals(cpt.passClient()))
+			{
+				return true;
+			}
+			else {
+
+			}
+		}
+
 		if(login.equals("admin") && pass.equals("admin")) {
 			System.out.println("Info:Connexion OK");
 			return true;

@@ -58,7 +58,7 @@ public class Menu extends JFrame {
         title.setBackground(Color.white);
         title.setOpaque(true);
 
-        btnLastOpe = new JButton(toUTF8("Dernières opérations"));
+        btnLastOpe = new JButton(toUTF8("Gestions opérations"));
         btnLastOpe.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

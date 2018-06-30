@@ -4,6 +4,8 @@ module Banque {
 			
 			attribute string nomClient;
 			readonly attribute float solde;
+			attribute string loginClient;
+            attribute string passClient;
 			
 			boolean debiter (in float somme, in long nocompte);
 			boolean crediter (in float somme, in long nocompte);

@@ -3,6 +3,9 @@ module Banque {
 		interface Compte{
 			
 			attribute string nomClient;
+			attribute string loginClient;
+			attribute string passClient;
+
 			readonly attribute float solde;
 			
 			boolean debiter (in float somme, in long nocompte);

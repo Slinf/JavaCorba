@@ -39,6 +39,26 @@ public class CompteImpl extends ComptePOA {
 	}
 
 	@Override
+	public String loginClient() {
+		return _login;
+	}
+
+	@Override
+	public void loginClient(String newLoginClient) {
+
+	}
+
+	@Override
+	public String passClient() {
+		return _pass;
+	}
+
+	@Override
+	public void passClient(String newPassClient) {
+
+	}
+
+	@Override
 	public float solde() {
 		return _solde;
 	}
@@ -49,10 +69,13 @@ public class CompteImpl extends ComptePOA {
 		if (somme > 0 && _solde > somme) {
 			_solde = _solde - somme;
 			Operation op = new Operation(0,nocompte,somme,"opération débit réussi");
+			LstOperation.add(op);
 			return true;
 		}
-		Operation op = new Operation(0,nocompte,somme,"opération débit refusé");
-		LstOperation.add(op);
+		else{
+			Operation op = new Operation(0,nocompte,somme,"opération débit refusé");
+			LstOperation.add(op);
+		}
 		return false;
 	}
 
@@ -62,11 +85,14 @@ public class CompteImpl extends ComptePOA {
 		if (somme > 0) {
 			_solde = _solde + somme;
 			Operation op = new Operation(1,nocompte,somme,"opération crédit réussi");
+			LstOperation.add(op);
 			return true;
 		}
-
-		Operation op = new Operation(1,nocompte,somme,"opération crédit refusé");
-		LstOperation.add(op);
+		else
+		{
+			Operation op = new Operation(1,nocompte,somme,"opération crédit refusé");
+			LstOperation.add(op);
+		}
 		return false;
 	}
 
@@ -76,11 +102,14 @@ public class CompteImpl extends ComptePOA {
 		if (somme > 0 && _solde > somme) {
 			_solde = _solde - somme;
 			Operation op = new Operation(2,nocompte,somme,"opération virement réussi");
+			LstOperation.add(op);
 			return true;
 		}
-		Operation op = new Operation(2,nocompte,somme,"opération virement refusé");
+		else {
+			Operation op = new Operation(2, nocompte, somme, "opération virement refusé");
+			LstOperation.add(op);
+		}
 
-		LstOperation.add(op);
 		return false;
 	}
 
@@ -108,7 +137,7 @@ public class CompteImpl extends ComptePOA {
 		}
 		else {
 			for (Beneficiaire b : LstBenef) {
-				listString += b.getNom() + " " +  b.getPrenom() + " N°Compte:" + b.getNocompte() + "_";
+				listString += b.getNom() + " " +  b.getPrenom() + " Num compte:" + b.getNocompte() + "_";
 			}
 		}
 		System.out.println(listString);
@@ -122,8 +151,9 @@ public class CompteImpl extends ComptePOA {
 		for (Operation op : LstOperation)
 		{
 			if(op.getType() == 0)
-				listString += " Débit de :" + op.getMontant() + " Numéro de compte:" + op.getNocompte() + "Informations supp : " + op.getInfo() + "\t";
+				listString += " Débit de :" + op.getMontant() + " Num compte:" + op.getNocompte() + "_";
 		}
+		System.out.println(listString);
 		return listString;
 	}
 
@@ -134,8 +164,9 @@ public class CompteImpl extends ComptePOA {
 		for (Operation op : LstOperation)
 		{
 			if(op.getType() == 1)
-				listString += " Crédit de :" + op.getMontant() + " Numéro de compte:" + op.getNocompte() + "Informations supp : " + op.getInfo() + "\t";
+				listString += " Crédit de :" + op.getMontant() + " Num compte:" + op.getNocompte() + "_";
 		}
+		System.out.println(listString);
 		return listString;
 
 	}
@@ -147,8 +178,9 @@ public class CompteImpl extends ComptePOA {
 		for (Operation op : LstOperation)
 		{
 			if(op.getType() == 2)
-				listString += " Virement de :" + op.getMontant() + " Numéro de compte:" + op.getNocompte() + "Informations supp : " + op.getInfo() + "\t";
+				listString += " Virement de :" + op.getMontant() + " Num compte:" + op.getNocompte() + "_";
 		}
+		System.out.println(listString);
 		return listString;
 	}
 
@@ -159,7 +191,7 @@ public class CompteImpl extends ComptePOA {
 		for (Operation op : LstOperation)
 		{
 			if(op.getType() == 3)
-				listString += " Ajout Bénéficiare: Numéro de compte:" + op.getNocompte() + "Nom béneficiare: " + op.getInfo() + "\t";
+				listString += " Ajout Bénéficiare: Numéro de compte:" + op.getNocompte() + "Nom béneficiare: " + op.getInfo() + "_";
 		}
 		return listString;
 	}
